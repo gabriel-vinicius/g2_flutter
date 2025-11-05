@@ -77,7 +77,7 @@ class _TaskFormViewState extends State<TaskFormView> {
           ),
           const SizedBox(height: 8),
           DropdownButtonFormField<EisenhowerQuadrant>(
-            initialValue: _quadrant,
+            value: _quadrant,
             decoration: const InputDecoration(
               border: OutlineInputBorder(),
               prefixIcon: Icon(Icons.dashboard),
