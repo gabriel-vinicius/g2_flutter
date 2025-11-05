@@ -21,15 +21,9 @@ class DefaultFirebaseOptions {
     }
     switch (defaultTargetPlatform) {
       case TargetPlatform.android:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for android - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return android;
       case TargetPlatform.iOS:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for ios - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return ios;
       case TargetPlatform.macOS:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for macos - '
@@ -53,11 +47,28 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyAOaSkZWZjuIBY-sUjFkAryjC6ZqECXccs',
-    appId: '1:511300942295:web:4e18a64ec8c60100bbb392',
-    messagingSenderId: '511300942295',
-    projectId: 'projeto-flutter-g2',
-    authDomain: 'projeto-flutter-g2.firebaseapp.com',
-    storageBucket: 'projeto-flutter-g2.firebasestorage.app',
+    apiKey: 'AIzaSyBS5jOACVhSwqmdxxmL950MVqG9ZUFeknc',
+    appId: '1:815579318707:web:4c96ef7dc0598b811063c6',
+    messagingSenderId: '815579318707',
+    projectId: 'projeto-g2-67c28',
+    authDomain: 'projeto-g2-67c28.firebaseapp.com',
+    storageBucket: 'projeto-g2-67c28.firebasestorage.app',
+  );
+
+  static const FirebaseOptions android = FirebaseOptions(
+    apiKey: 'AIzaSyBS5jOACVhSwqmdxxmL950MVqG9ZUFeknc',
+    appId: '1:815579318707:android:4c96ef7dc0598b811063c6',
+    messagingSenderId: '815579318707',
+    projectId: 'projeto-g2-67c28',
+    storageBucket: 'projeto-g2-67c28.firebasestorage.app',
+  );
+
+  static const FirebaseOptions ios = FirebaseOptions(
+    apiKey: 'AIzaSyBS5jOACVhSwqmdxxmL950MVqG9ZUFeknc',
+    appId: '1:815579318707:ios:4c96ef7dc0598b811063c6',
+    messagingSenderId: '815579318707',
+    projectId: 'projeto-g2-67c28',
+    storageBucket: 'projeto-g2-67c28.firebasestorage.app',
+    iosBundleId: 'com.example.projetoG2',
   );
 }

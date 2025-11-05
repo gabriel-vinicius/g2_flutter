@@ -1,5 +1,10 @@
 name: projeto_g2
-description: App demo com MVVM (View+ViewModel), Repository/Service, GetX, Firebase.
+description: Aplicativo acadêmico Projeto G2 com Flutter, GetX e Firebase - Matriz de Eisenhower
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
 environment:
   sdk: ">=3.4.0 <4.0.0"
 
@@ -15,3 +20,6 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
